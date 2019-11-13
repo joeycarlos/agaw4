@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: -2833982934074475811}
   - component: {fileID: -1584174071035159451}
   - component: {fileID: -7687955072628358761}
+  - component: {fileID: 3488933496479137214}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -269,3 +270,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+--- !u!114 &3488933496479137214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6664247343063435864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd34e4ff949d3d64a8893b3c2bb9da97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow: {fileID: 1587121147553553337, guid: 92f23262fca8f8543bbb0b2c247a1b7f, type: 3}
+  fireRate: 0.5
+  arrowSpeed: 10
