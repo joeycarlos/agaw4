@@ -11,11 +11,15 @@ public class Arrow : MonoBehaviour
         transform.Translate(moveVector * Time.deltaTime);
     }
 
-    public void InitArrow(Vector3 newVector, float projectileSpeed) {
+    public void InitArrow(Vector3 newVector, float projectileSpeed, float damage, float lifetime) {
         // calculate the movement vector of fire projectile per update frame
         moveVector = newVector;
         moveVector.z = 0;
         moveVector = Vector3.Normalize(newVector);
         moveVector *= projectileSpeed;
+
+        Debug.Log("Damage of Arrow: " + damage);
+
+        Destroy(gameObject, lifetime);
     }
 }
